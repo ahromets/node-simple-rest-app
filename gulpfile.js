@@ -2,8 +2,15 @@ var gulp = require('gulp');
 var spawn = require('child_process').spawn;
 var node;
 
-gulp.task('default', function () {
+gulp.task('default', ['serve'], function () {
     console.log('This is a default task');
+});
+
+gulp.task('serve', function () {
+    gulp.run('server');
+    gulp.watch(['./server.server.js'], function () {
+        gulp.run('server');
+    })
 });
 
 gulp.task('server', function () {
