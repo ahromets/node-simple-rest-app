@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "gulp": "^3.9.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -13,4 +14,3 @@
   "author": "Alexey Khromets",
   "license": "ISC"
 }
-npm install
